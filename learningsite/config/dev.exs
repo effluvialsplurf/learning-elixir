@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :learningsite, Learningsite.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "password",
   hostname: "localhost",
   database: "learningsite_dev",
   stacktrace: true,
