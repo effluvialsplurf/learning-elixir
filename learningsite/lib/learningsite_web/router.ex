@@ -18,6 +18,8 @@ defmodule LearningsiteWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/about", PageController, :about
+    live "/counter", CounterLive
   end
 
   # Other scopes may use custom stacks.

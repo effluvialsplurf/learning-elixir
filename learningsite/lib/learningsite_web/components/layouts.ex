@@ -51,6 +51,12 @@ defmodule LearningsiteWeb.Layouts do
             <a href="https://github.com/phoenixframework/phoenix" class="btn btn-ghost">GitHub</a>
           </li>
           <li>
+            <a href="/about" class="btn btn-ghost">About</a>
+          </li>
+          <li>
+            <a href="/counter" class="btn btn-ghost">Counter</a>
+          </li>
+          <li>
             <.theme_toggle />
           </li>
           <li>

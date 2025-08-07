@@ -1,0 +1,38 @@
+<Layouts.app flash={@flash}>
+  <div class="max-w-md mx-auto text-center">
+    <h1 class="text-3xl font-bold text-gray-900 mb-8">Interactive Counter</h1>
+    
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <div class="text-6xl font-bold text-blue-600 mb-6">
+        <%= @count %>
+      </div>
+      
+      <div class="flex justify-center space-x-4">
+        <button 
+          phx-click="decrement" 
+          class="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+        >
+          -
+        </button>
+        
+        <button 
+          phx-click="reset" 
+          class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+        >
+          Reset
+        </button>
+        
+        <button 
+          phx-click="increment" 
+          class="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+        >
+          +
+        </button>
+      </div>
+      
+      <p class="mt-6 text-sm text-gray-600">
+        This counter updates in real-time using Phoenix LiveView!
+      </p>
+    </div>
+  </div>
+</Layouts.app>
